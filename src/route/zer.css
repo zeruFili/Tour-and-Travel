@@ -1,0 +1,21 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .flexed-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .sidebar {
+    margin: 4%;
+  }
+  
+  
+  
+  .container > section {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }

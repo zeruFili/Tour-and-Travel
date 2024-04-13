@@ -1,0 +1,159 @@
+/* headerStyles.module.css */
+
+:root {
+    --primary-color: #f13033;
+    --primary-color-dark: #c3282b;
+    --secondary-color: #f9f9f9;
+    --text-dark: #0f172a;
+    --text-light: #64748b;
+    --white: #ffffff;
+    --max-width: 1200px;
+  }
+  
+  .header {
+    background-image: url("./assets/arbaminch.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .nav__logo a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .link a {
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  
+  .link a:hover {
+    color: var(--primary-color);
+  }
+  
+  .section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+  
+  .header__container {
+    padding: 5rem 1rem 10rem;
+  }
+  
+  .header__container h1 {
+    margin-bottom: 4rem;
+    max-width: 1000px;
+    margin-inline: auto;
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .header__form {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  
+  .header__form form {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #ffffff;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #c3282b;
+  }
+  
+  .seller__image__footer .btn {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  
+  .guide__socials .btn {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  
+  .input__group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .input__group label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  
+  .input__group input {
+    max-width: 140px;
+    outline: none;
+    border: none;
+    font-size: 0.9rem;
+  }
+  
+  .subscribe__container input {
+    width: 100%;
+    padding: 0 2rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+  }
+  
+  @media (max-width: 900px) {
+    .nav__links {
+      gap: 1rem;
+    }
+  
+    .link a {
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .nav__links {
+      display: none;
+    }
+  
+    .header__form form {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+  
+    .subscribe__container input {
+      padding: 0 1rem;
+    }
+  }
