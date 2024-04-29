@@ -28,9 +28,9 @@ const CreateTable = () => {
       const response = await fetch("http://127.0.0.1:3000/api/v1/tours", {
         headers: {
           "Content-Type": "application/json",
-          "access-token": "V3cwsYnnMRPi_S2nKFVEhA",
-          client: "mE-XbkK2ZoS-nHR60fht0g",
-          uid: "usergguopuigadoni@example.com",
+          "access-token": "",
+          client: "",
+          uid: "",
         },
       });
 
